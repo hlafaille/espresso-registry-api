@@ -1,0 +1,19 @@
+name: EspressoRegistryAPI
+version:
+    major: 0
+    minor: 1
+    patch: 0
+    hotfix: null
+basePackage: com.kerosenelabs.espressoregistryapi
+toolchain:
+    path: /usr/lib/jvm/msopenjdk-current
+dependencies:
+    - name: kindling
+      group: com.kerosenelabs
+      version:
+          major: 0
+          minor: 2
+          patch: 0
+registries:
+    - name: espresso-registry
+      url: https://github.com/Kerosene-Labs/espresso-registry/archive/refs/heads/main.zip
