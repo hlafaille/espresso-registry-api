@@ -1,8 +1,9 @@
 package com.kerosenelabs.espressoregistryapi.handler;
 
 import com.kerosenelabs.kindling.handler.RequestHandler;
+
 import com.kerosenelabs.kindling.exception.KindlingException;
-import com.kerosenelabs.espressoregistryapi.service.QueryService;
+import com.kerosenelabs.espressoregistryapi.service.RegistryService;
 import com.kerosenelabs.kindling.HttpRequest;
 import com.kerosenelabs.kindling.HttpResponse;
 import com.kerosenelabs.kindling.constant.HttpStatus;
@@ -11,7 +12,7 @@ import java.util.HashMap;
 public class QueryHandler extends RequestHandler {
 
     // dependencies
-    private QueryService queryService = QueryService.getInstance();
+    private RegistryService registryService = RegistryService.getInstance();
 
     @Override
     public HttpResponse handle(HttpRequest httpRequest) throws KindlingException {
