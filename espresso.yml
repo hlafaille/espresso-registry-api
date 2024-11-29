@@ -1,19 +1,43 @@
 name: EspressoRegistryAPI
 version:
-    major: 0
-    minor: 1
-    patch: 0
-    hotfix: null
+  major: 0
+  minor: 1
+  patch: 0
+  hotfix: null
 basePackage: com.kerosenelabs.espressoregistryapi
 toolchain:
-    path: /usr/lib/jvm/msopenjdk-current
+  path: /usr/lib/jvm/msopenjdk-current
 dependencies:
-    - name: kindling
-      group: com.kerosenelabs
-      version:
-          major: 0
-          minor: 2
-          patch: 0
+  - name: kindling
+    group: com.kerosenelabs
+    version:
+      major: 0
+      minor: 4
+      patch: 3
+  - name: snakeyaml
+    group: org.yaml
+    version:
+      major: 2
+      minor: 3
+      patch: 0
+  - name: moshi
+    group: com.squareup.moshi
+    version:
+      major: 1
+      minor: 15
+      patch: 1
+  - name: okio
+    group: com.squareup.okio
+    version:
+      major: 3
+      minor: 9
+      patch: 1
+  # - name: okio-jvm
+  #   group: com.squareup.okio
+  #   version:
+  #     major: 3
+  #     minor: 9
+  #     patch: 1
 registries:
-    - name: espresso-registry
-      url: https://github.com/Kerosene-Labs/espresso-registry/archive/refs/heads/main.zip
+  - name: espresso-registry
+    url: https://github.com/Kerosene-Labs/espresso-registry/archive/refs/heads/main.zip

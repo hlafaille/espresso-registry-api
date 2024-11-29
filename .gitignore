@@ -4,7 +4,7 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-espresso-registry-main/
+espresso-registry-main
 
 ### STS ###
 .apt_generated
